@@ -1,0 +1,138 @@
+body {
+    background-color: #060C0C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 10vw; /* Use viewport width for responsive font size */
+    font-family: 'Titillium Web', 'Consolas';
+    font-weight: bold;
+    animation: glow 36s infinite ease-in-out alternate, grow 395s infinite alternate;
+}
+
+h3 {
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin: 0 10vw; /* Add margin to ensure it fits within the viewport */
+}
+
+.box1 {
+    border: none;
+    padding: 5px;
+    margin: 5vh auto; /* Use viewport height for responsive margin */
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 3px;
+    max-width: 90vw; /* Use viewport width for responsive max-width */
+}
+
+.box1:hover {
+    animation: glowbox 6s infinite alternate, grow 6s infinite alternate;
+}
+
+#box1 {
+    background-color: white;
+}
+
+@keyframes glowbox {
+    50% {
+        box-shadow: 0 0 55px white;
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px white;
+    }
+    50% {
+        text-shadow: 0 0 15px white, 0 0 20px white, 0 0 25px white;
+    }
+}
+
+@keyframes grow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.fa-brands.fa-github.fa-lg {
+    color: #111184;
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border-color: #111184;
+    border: 4px solid;
+    text-align: center;
+}
+@keyframes glowboxgithub {
+    50% {
+        box-shadow: 0 0 55px #111184;
+    }
+}
+
+.fa-brands.fa-github.fa-lg:hover {
+    animation: glowboxgithub 6s infinite alternate, grow 6s infinite alternate;
+}
+
+.fa-brands.fa-x-twitter.fa-lg {
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 30px;
+    border-color: white;
+    border: 4px solid;
+    text-align: center;
+}
+
+.fa-brands.fa-x-twitter.fa-lg:hover {
+    animation: glowbox 6s infinite alternate, grow 6s infinite alternate;
+}
+
+.fa-brands.fa-reddit-alien.fa-lg {
+    color: orangered;
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border-color: orangered;
+    border: 4px solid;
+    text-align: center;
+}
+@keyframes glowboxreddit {
+    50% {
+        box-shadow: 0 0 55px orangered;
+    }
+}
+
+.fa-brands.fa-reddit-alien.fa-lg:hover {
+    animation: glowboxreddit 6s infinite alternate, grow 6s infinite alternate;
+}
+.socialicons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+}
+.sodapopicon {
+width: 150px;
+height: auto;
+border-radius: 3px;
+border: 4px solid;
+border-color: white;
+margin: 30px;
+padding: 0px;
+
+
+
+}
+.sodapopicon:hover {
+    animation: glowbox 6s infinite alternate, grow 6s infinite alternate;
+}
